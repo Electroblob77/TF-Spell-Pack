@@ -1,0 +1,281 @@
+{
+    "display": {
+        "icon": {
+            "item": "tfspellpack:twilight_spell_book"
+        },
+        "title": {
+            "translate": "advancement.tfspellpack:all_twilight_spells"
+        },
+        "description": {
+            "translate": "advancement.tfspellpack:all_twilight_spells.desc"
+        },
+        "frame": "challenge"
+    },
+    "parent": "tfspellpack:twilight_spell",
+    "criteria": {
+        "acid_rain": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:acid_rain"
+                }
+            }
+        },
+        "annihilation": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:annihilation"
+                }
+            }
+        },
+        "call_of_the_horn": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:call_of_the_horn"
+                }
+            }
+        },
+        "carminite_singularity": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:carminite_singularity"
+                }
+            }
+        },
+        "chariot_of_ice": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:chariot_of_ice"
+                }
+            }
+        },
+        "cinder_cloud": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:cinder_cloud"
+                }
+            }
+        },
+        "death_page": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:death_page"
+                }
+            }
+        },
+        "druid_hex": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:druid_hex"
+                }
+            }
+        },
+        "fire_jets": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:fire_jets"
+                }
+            }
+        },
+        "fortification": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:fortification"
+                }
+            }
+        },
+        "frost_breath": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:frost_breath"
+                }
+            }
+        },
+        "ghast_trap": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:ghast_trap"
+                }
+            }
+        },
+        "hydra_bomb": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:hydra_bomb"
+                }
+            }
+        },
+        "hydras_vigour": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:hydras_vigour"
+                }
+            }
+        },
+        "ice_bomb": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:ice_bomb"
+                }
+            }
+        },
+        "ironwood_heart": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:ironwood_heart"
+                }
+            }
+        },
+        "life_charm": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:life_charm"
+                }
+            }
+        },
+        "mist_cloak": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:mist_cloak"
+                }
+            }
+        },
+        "moonworm": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:moonworm"
+                }
+            }
+        },
+        "pocket_tinkerer": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:pocket_tinkerer"
+                }
+            }
+        },
+        "rain_of_tears": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:rain_of_tears"
+                }
+            }
+        },
+        "snow_guardian_horde": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:snow_guardian_horde"
+                }
+            }
+        },
+        "summon_cave_troll": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_cave_troll"
+                }
+            }
+        },
+        "summon_fire_beetle": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_fire_beetle"
+                }
+            }
+        },
+        "summon_goblin": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_goblin"
+                }
+            }
+        },
+        "summon_ice_core": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_ice_core"
+                }
+            }
+        },
+        "summon_skeleton_druid": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_skeleton_druid"
+                }
+            }
+        },
+        "summon_slime_beetle": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_slime_beetle"
+                }
+            }
+        },
+        "summon_twilight_wraith": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:summon_twilight_wraith"
+                }
+            }
+        },
+        "suffocating_mist": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:suffocating_mist"
+                }
+            }
+        },
+        "transformation": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:transformation"
+                }
+            }
+        },
+        "twilight_catalyst": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:twilight_catalyst"
+                }
+            }
+        },
+        "twilight_orb": {
+            "trigger": "ebwizardry:cast_spell",
+            "conditions": {
+                "spell": {
+                    "spell": "tfspellpack:twilight_orb"
+                }
+            }
+        }
+    }
+}

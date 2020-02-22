@@ -1,0 +1,13 @@
+[
+{
+  "modid": "tfspellpack",
+  "name": "Electroblob's Wizardry: Twilight Forest Spell Pack",
+  "description": "The official Twilight Forest addon for Electroblob's Wizardry, adding spells and items for all things twilight!",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "url": "https://minecraft.curseforge.com/projects/electroblobs-wizardry-twilight-forest-spell-pack",
+  "authorList": ["Electroblob"],
+  "credits": "\nDesigned, coded and textured by Electroblob.\nIncorporates some code and assets from The Twilight Forest, developed by Benimatic, Drullkus, AtomicBlom, Tamaized, williewillus.",
+  "logoFile": "assets/tfspellpack/textures/gui/logo.png"
+}
+]

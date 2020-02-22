@@ -1,0 +1,35 @@
+{
+	"pools": [
+		{
+			"name": "rare_artefacts",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "tfspellpack:ring_trollsteinn",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:amulet_carminite",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:charm_ice_exploder",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:charm_troll",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:charm_accursed_tome",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

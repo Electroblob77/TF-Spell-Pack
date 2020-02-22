@@ -1,0 +1,33 @@
+{
+	"name": "Twilight",
+	"description": "In the dark recesses of the twilight forest, an ancient magic awakens...",
+	"width": 128,
+	"height": 45,
+	"mirror": {
+		"x": true,
+		"y": true
+	},
+	"spell_icon_inset": {
+		"x": 2,
+		"y": 2
+	},
+	"text_inset": {
+		"x": 42,
+		"y": 19
+	},
+	"spell_cascade_offset": {
+		"x": 1,
+		"y": 7
+	},
+	"cooldown_bar": {
+		"x": 42,
+		"y": 1,
+		"length": 83,
+		"height": 6,
+		"mirror": {
+			"x": true,
+			"y": true
+		},
+		"show_when_full": true
+	}
+}

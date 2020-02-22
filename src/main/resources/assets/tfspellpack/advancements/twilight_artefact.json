@@ -1,0 +1,152 @@
+{
+    "display": {
+        "icon": {
+            "item": "tfspellpack:ring_twilight"
+        },
+        "title": {
+            "translate": "advancement.tfspellpack:twilight_artefact"
+        },
+        "description": {
+            "translate": "advancement.tfspellpack:twilight_artefact.desc"
+        }
+    },
+    "parent": "tfspellpack:twilight_spell",
+    "criteria": {
+        "ring_twilight": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:ring_twilight"
+                    }
+                ]
+            }
+        },
+        "ring_hydra_kaboom": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:ring_hydra_kaboom"
+                    }
+                ]
+            }
+        },
+        "ring_aurora": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:ring_aurora"
+                    }
+                ]
+            }
+        },
+        "ring_trollsteinn": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:ring_trollsteinn"
+                    }
+                ]
+            }
+        },
+        "ring_stealth_attack": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:ring_stealth_attack"
+                    }
+                ]
+            }
+        },
+        "amulet_steeleaf": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:amulet_steeleaf"
+                    }
+                ]
+            }
+        },
+        "amulet_carminite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:amulet_carminite"
+                    }
+                ]
+            }
+        },
+        "amulet_life_charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:amulet_life_charm"
+                    }
+                ]
+            }
+        },
+        "charm_ice_exploder": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:charm_ice_exploder"
+                    }
+                ]
+            }
+        },
+        "charm_goblin": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:charm_goblin"
+                    }
+                ]
+            }
+        },
+        "charm_troll": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:charm_troll"
+                    }
+                ]
+            }
+        },
+        "charm_accursed_tome": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tfspellpack:charm_accursed_tome"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ring_twilight",
+            "ring_hydra_kaboom",
+            "ring_aurora",
+            "ring_trollsteinn",
+            "ring_stealth_attack",
+            "amulet_steeleaf",
+            "amulet_carminite",
+            "amulet_life_charm",
+            "charm_ice_exploder",
+            "charm_goblin",
+            "charm_troll",
+            "charm_accursed_tome"
+        ]
+    ]
+}

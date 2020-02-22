@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"name": "uncommon_artefacts",
+			"rolls": 1,
+			"entries": [
+				{
+                    "type": "item",
+                    "name": "tfspellpack:ring_twilight",
+                    "weight": 1
+                },
+				{
+					"type": "item",
+					"name": "tfspellpack:ring_stealth_attack",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:amulet_steeleaf",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

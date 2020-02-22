@@ -1,0 +1,28 @@
+{
+	"enabled": {
+		"book": true,
+		"scroll": true,
+		"wands": true,
+		"npcs": true,
+		"dispensers": true,
+		"commands": true,
+		"treasure": true,
+		"trades": true,
+		"looting": true
+	},
+	"tier": "master",
+	"element": "necromancy",
+	"type": "construct",
+	"cost": 125,
+	"chargeup": 0,
+	"cooldown": 250,
+	"base_properties": {
+		"range": 20,
+		"duration": 600,
+		"damage": 2,
+		"effect_radius": 6,
+		"blindness_duration": 200,
+		"slowness_duration": 200,
+		"slowness_strength": 2
+	}
+}

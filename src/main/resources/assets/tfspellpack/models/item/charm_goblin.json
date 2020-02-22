@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfspellpack:items/charm_goblin"
+    }
+}

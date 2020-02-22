@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"name": "epic_artefacts",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "tfspellpack:ring_hydra_kaboom",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:ring_aurora",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:amulet_life_charm",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "tfspellpack:charm_goblin",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

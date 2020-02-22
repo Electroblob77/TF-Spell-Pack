@@ -1,0 +1,14 @@
+{
+	"twilight": {
+		"texture": "tfspellpack:gui/spell_hud/twilight",
+		"metadata": "tfspellpack:gui/spell_hud/twilight"
+	},
+	"towerwood": {
+		"texture": "tfspellpack:gui/spell_hud/towerwood",
+		"metadata": "tfspellpack:gui/spell_hud/towerwood"
+	},
+	"final_castle": {
+		"texture": "tfspellpack:gui/spell_hud/final_castle",
+		"metadata": "tfspellpack:gui/spell_hud/final_castle"
+	}
+}
