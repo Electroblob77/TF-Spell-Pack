@@ -7,7 +7,9 @@ import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -46,9 +48,11 @@ public class CallOfTheHorn extends SpellRay {
 		this.ignoreLivingEntities(true);
 		this.hitLiquids(false);
 		this.soundValues(1, 0.8f, 0);
-		this.npcSelector(TFSPUtils.IN_TF_DIMENSION);
 		addProperties(EFFECT_RADIUS);
 	}
+
+	@Override
+	public boolean canBeCastBy(EntityLiving npc, boolean override){ return false; }
 
 	@Override
 	public boolean applicableForItem(Item item){
@@ -62,6 +66,8 @@ public class CallOfTheHorn extends SpellRay {
 
 	@Override
 	protected boolean onBlockHit(World world, BlockPos pos, EnumFacing side, Vec3d hit, @Nullable EntityLivingBase caster, Vec3d origin, int ticksInUse, SpellModifiers modifiers){
+
+		if(!(caster instanceof EntityPlayer)) return false; // Just in case old entities still have this spell
 
 		if(!world.isRemote && ticksInUse > 10 && ticksInUse % 5 == 0){
 
