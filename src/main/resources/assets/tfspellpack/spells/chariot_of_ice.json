@@ -1,29 +1,29 @@
 {
-  "enabled": {
-    "book": true,
-    "scroll": true,
-    "wands": true,
-    "npcs": true,
-    "dispensers": true,
-    "commands": true,
-    "treasure": true,
-	"trades": true,
-    "looting": true
-  },
-  "tier": "master",
-  "element": "ice",
-  "type": "attack",
-  "cost": 20,
-  "chargeup": 0,
-  "cooldown": 0,
-  "base_properties": {
-    "speed": 1.2,
-    "acceleration": 0.05,
-    "hover_height": 1.5,
-    "max_hover_height": 10,
-    "damage": 6,
-    "knockback_strength": 1,
-    "blast_radius": 4,
-    "max_crush_damage": 10
-  }
+	"enabled": {
+		"book": true,
+		"scroll": true,
+		"wands": true,
+		"npcs": true,
+		"dispensers": true,
+		"commands": true,
+		"treasure": true,
+		"trades": true,
+		"looting": true
+	},
+	"tier": "master",
+	"element": "ice",
+	"type": "attack",
+	"cost": 20,
+	"chargeup": 0,
+	"cooldown": 0,
+	"base_properties": {
+		"speed": 1.2,
+		"acceleration": 0.05,
+		"hover_height": 1.5,
+		"max_hover_height": 10,
+		"damage": 6,
+		"knockback_strength": 1,
+		"blast_radius": 4,
+		"max_crush_damage": 10
+	}
 }
