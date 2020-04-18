@@ -7,7 +7,7 @@ package electroblob.tfspellpack;
  *
  * @see electroblob.tfspellpack.client.ClientProxy ClientProxy
  * @author Electroblob
- * @since Wizardry 1.0
+ * @since TF Spell Pack 1.0
  */
 public class CommonProxy {
 
