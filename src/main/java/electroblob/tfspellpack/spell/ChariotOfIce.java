@@ -119,18 +119,22 @@ public class ChariotOfIce extends Spell {
 
 		}else{ // Hover
 
-			caster.fallDistance = 0; // Prevents cheesing of the ground slam effect
+			if(world.isRemote){
+				
+				caster.fallDistance = 0; // Prevents cheesing of the ground slam effect
 
-			float hoverHeight = caster instanceof EntityPlayerSP && ((EntityPlayerSP)caster).movementInput.jump
-					? maxHoverHeight : minHoverHeight;
+				// FIXME: EntityPlayerSP doesn't exist on the server! Is this supposed to be client-only?
+				float hoverHeight = caster instanceof EntityPlayerSP && ((EntityPlayerSP)caster).movementInput.jump
+						? maxHoverHeight : minHoverHeight;
 
-			hoverHeight += MathHelper.sin(ticksInUse / HOVER_ANIMATION_PERIOD) * HOVER_ANIMATION_MAGNITUDE; // Floaty
+				hoverHeight += MathHelper.sin(ticksInUse / HOVER_ANIMATION_PERIOD) * HOVER_ANIMATION_MAGNITUDE; // Floaty
 
-			Integer floor = WizardryUtilities.getNearestFloor(world, caster.getPosition(), MathHelper.ceil(hoverHeight) + 1);
+				Integer floor = WizardryUtilities.getNearestFloor(world, caster.getPosition(), MathHelper.ceil(hoverHeight) + 1);
 
-			if(floor != null){ // If floor is more than 3 blocks away, allow caster to fall normally
-				caster.motionY = Math.min(((floor + hoverHeight - caster.posY) * VERTICAL_ACCELERATION_FACTOR),
-						speed * VERTICAL_MOVEMENT_FACTOR);
+				if(floor != null){ // If floor is more than 3 blocks away, allow caster to fall normally
+					caster.motionY = Math.min(((floor + hoverHeight - caster.posY) * VERTICAL_ACCELERATION_FACTOR),
+							speed * VERTICAL_MOVEMENT_FACTOR);
+				}
 			}
 		}
 
