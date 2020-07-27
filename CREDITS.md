@@ -13,3 +13,8 @@ This work incorporates and adapts a few small bits of code and assets from _The 
 Thanks to Minecraft Forge and MCP, without which Wizardry and this addon would not have been possible.
 
 Thanks also to the Minecraft modding community, which always has an answer to my modding problems!
+
+#### Translations
+
+- Chinese (Simplified): Hokorizero, Clefal, TUSama
+- Russian: Akaleaf

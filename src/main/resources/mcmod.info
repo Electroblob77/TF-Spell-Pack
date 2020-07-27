@@ -7,7 +7,7 @@
   "mcversion": "1.12.2",
   "url": "https://minecraft.curseforge.com/projects/electroblobs-wizardry-twilight-forest-spell-pack",
   "authorList": ["Electroblob"],
-  "credits": "\nDesigned, coded and textured by Electroblob.\nIncorporates some code and assets from The Twilight Forest, developed by Benimatic, Drullkus, AtomicBlom, Tamaized, williewillus.",
+  "credits": "\nDesigned, coded and textured by Electroblob.\nIncorporates some code and assets from The Twilight Forest, developed by Benimatic, Drullkus, AtomicBlom, Tamaized, williewillus.\nTranslators: Hokorizero, Clefal, TUSama (Chinese Simplified), Akaleaf (Russian)",
   "logoFile": "assets/tfspellpack/textures/gui/logo.png"
 }
 ]
