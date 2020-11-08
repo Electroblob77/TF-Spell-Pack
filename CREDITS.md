@@ -18,3 +18,4 @@ Thanks also to the Minecraft modding community, which always has an answer to my
 
 - Chinese (Simplified): Hokorizero, Clefal, TUSama
 - Russian: Akaleaf
+- Korean: red1854th

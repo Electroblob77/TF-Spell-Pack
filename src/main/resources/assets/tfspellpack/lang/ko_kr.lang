@@ -1,0 +1,136 @@
+# PARSE_ESCAPES
+item.tfspellpack\:twilight_spell_book.name=황혼 주문서
+item.tfspellpack\:twilight_scroll.name=황혼 두루마리
+
+item.tfspellpack\:ring_twilight.name=황혼 반지
+item.tfspellpack\:ring_twilight.desc=황혼의 숲에서 주문의 피해를 10%%증가시킵니다
+item.tfspellpack\:ring_hydra_kaboom.name=악의적인 눈의 반지
+item.tfspellpack\:ring_hydra_kaboom.desc=히드라탄 주문이 TNT처럼 폭발합니다
+item.tfspellpack\:ring_aurora.name=오로라의 반지
+item.tfspellpack\:ring_aurora.desc=얼어붙은 왕좌 주문의 내려찍기가 블록을 파괴합니다
+item.tfspellpack\:ring_trollsteinn.name=트롤슈타인 반지
+item.tfspellpack\:ring_trollsteinn.desc=산성비 주문이 대상에게 독을 부여한다
+item.tfspellpack\:ring_stealth_attack.name=밤의 은폐 반지
+item.tfspellpack\:ring_stealth_attack.desc=안개 은폐를 사용하여 들키지 않고 공격했을 때 50%%더 피해를 줍니다
+
+item.tfspellpack\:amulet_steeleaf.name=강철잎 목걸이
+item.tfspellpack\:amulet_steeleaf.desc=황혼의 숲에서 마법사 갑옷의 모자, 로브, 각반, 부츠를 모두 장착할 경우 받는 피해량의 10%%가 감소합니다
+item.tfspellpack\:amulet_carminite.name=카미나이트 목걸이
+item.tfspellpack\:amulet_carminite.desc=카미나이트의 특이점을 가진 발사체를 막아냅니다
+item.tfspellpack\:amulet_life_charm.name=황금 심장 펜던트
+item.tfspellpack\:amulet_life_charm.desc=삶의 매력 주문이 시전자를 완벽하게 치유하고 추가적인 저항력을 부여합니다
+
+item.tfspellpack\:charm_ice_exploder.name=악성 얼음 진주
+item.tfspellpack\:charm_ice_exploder.desc=소환된 안정된 얼음 핵이 불안정한 얼음 핵이 됩니다
+item.tfspellpack\:charm_goblin.name=붉은모자 광부의 주머니
+item.tfspellpack\:charm_goblin.desc=소환된 붉은모자 고블린이 붉은모자 공병 고블린이 됩니다
+item.tfspellpack\:charm_troll.name=얼음 트롤버
+item.tfspellpack\:charm_troll.desc=소환된 동굴 트롤이 목표를 향해 얼음탄을 던집니다
+item.tfspellpack\:charm_accursed_tome.name=저주받은 책
+item.tfspellpack\:charm_accursed_tome.desc=죽음의 낱장 주문이 무작위 물약 효과을 부여합니다
+
+entity.tfspellpack\:fire_beetle_minion.name=불꽃 딱정벌레
+entity.tfspellpack\:stable_ice_core_minion.name=안정된 얼음 핵
+entity.tfspellpack\:unstable_ice_core_minion.name=불안정한 얼음 핵
+entity.tfspellpack\:redcap_goblin_minion.name=붉은모자 고블린
+entity.tfspellpack\:redcap_sapper_minion.name=붉은모자 공병 고블린
+entity.tfspellpack\:skeleton_druid_minion.name=스켈레톤 드루이드
+entity.tfspellpack\:slime_beetle_minion.name=슬라임 딱정벌레
+entity.tfspellpack\:twilight_wraith_minion.name=황혼숲 유령
+entity.tfspellpack\:snow_guardian_minion.name=눈 수호자
+entity.tfspellpack\:carminite_ghastling_minion.name=카미나이트 가스트링
+entity.tfspellpack\:cave_troll_minion.name=동굴 트롤
+
+entity.tfspellpack\:druid_mage.name=드루이드 마법사
+
+entity.tfspellpack\:acid_rain_cloud.name=산성비 구름
+entity.tfspellpack\:cinder_cloud.name=잿빛 구름
+entity.tfspellpack\:rain_of_tears.name=눈물의 비
+entity.tfspellpack\:dark_mist_cloud.name=검은안개 구름
+
+entity.tfspellpack\:fiery_tear.name=마법
+entity.tfspellpack\:magic_hydra_mortar.name=마법
+
+spell.tfspellpack\:acid_rain=산성비
+spell.tfspellpack\:annihilation=소멸
+spell.tfspellpack\:call_of_the_horn=뿔피리의 부름
+spell.tfspellpack\:carminite_singularity=카미나이트 특이점
+spell.tfspellpack\:chariot_of_ice=얼어붙은 왕좌
+spell.tfspellpack\:cinder_cloud=잿빛 구름
+spell.tfspellpack\:death_page=죽음의 낱장
+spell.tfspellpack\:druid_hex=드루이드 헥스
+spell.tfspellpack\:fire_jets=화염의 분출
+spell.tfspellpack\:fortification=요새화
+spell.tfspellpack\:frost_breath=서리의 숨결
+spell.tfspellpack\:ghast_trap=가스트 올가미
+spell.tfspellpack\:hydra_bomb=히드라탄
+spell.tfspellpack\:hydras_vigour=히드라의 활력
+spell.tfspellpack\:ice_bomb=얼음탄
+spell.tfspellpack\:ironwood_heart=아이언우드 심장
+spell.tfspellpack\:life_charm=삶의 매력
+spell.tfspellpack\:mist_cloak=안개 은폐
+spell.tfspellpack\:moonworm=달벌레
+spell.tfspellpack\:pocket_tinkerer=마법 분해 작업대
+spell.tfspellpack\:rain_of_tears=눈물의 비
+spell.tfspellpack\:snow_guardian_horde=눈 수호자 무리
+spell.tfspellpack\:summon_cave_troll=동굴 트롤 소환
+spell.tfspellpack\:summon_fire_beetle=불꽃 딱정벌레 소환
+spell.tfspellpack\:summon_goblin=고블린 소환
+spell.tfspellpack\:summon_ice_core=얼음 핵 소환
+spell.tfspellpack\:summon_skeleton_druid=스켈레톤 드루이드 소환
+spell.tfspellpack\:summon_slime_beetle=슬라임 딱정벌레 소환
+spell.tfspellpack\:summon_twilight_wraith=황혼숲 유령 소환
+spell.tfspellpack\:suffocating_mist=질식의 안개 
+spell.tfspellpack\:transformation=황혼의 변이
+spell.tfspellpack\:twilight_catalyst=황혼의 촉매
+spell.tfspellpack\:twilight_orb=황혼의 보주
+
+spell.tfspellpack\:acid_rain.desc=사용한 위치에 독성 비를 만듭니다. 그 안에서 들어간 적에게 계속해서 피해를 줍니다.
+spell.tfspellpack\:annihilation.desc="이 부적은 믿을 수 없을 정도로 짙은 촉감을 가지고 있었다, 물질 자체를 증발시킬 수 있는 다른 세계의 물질로 만들어진 것 같았다."
+spell.tfspellpack\:carminite_singularity.desc="레드스톤과 나무좀벌레 진액, 적절한 양의 가스트 눈물을 혼합하면 카미나이트라고 알려진 반응성이 높은 물질이 생성되며, 다소 특이한 성질이 있다."
+spell.tfspellpack\:call_of_the_horn.desc="메에애애애애애"
+spell.tfspellpack\:chariot_of_ice.desc=빙하 꼭대기 반짝이는 탑,\n사악한 마법사가 그녀의 왕좌를 지킨다.\n서리의 축복과 어마어마한 힘이 있지만,\n그녀는 영원히 홀로 저주받았다.
+spell.tfspellpack\:cinder_cloud.desc=사용한 위치에 재화의 구름을 만듭니다. 그 안에서 들어간 적에게 계속해서 피해를 주고 불을 붙입니다.
+spell.tfspellpack\:death_page.desc=시전한 방향으로 죽음의 책의 낱장을 발사합니다.
+spell.tfspellpack\:druid_hex.desc=시전한 방향으로 드루이드탄를 발사합니다.
+spell.tfspellpack\:fire_jets.desc="탐험가의 수첩에는 단 두 마디의 충고만이 적혀 있었다.\: '발 조심해'."
+spell.tfspellpack\:fortification.desc=마법의 방패 5개를 만듭니다. 각각의 방패는 12초 지나거나 파괴될 때까지 지속됩니다.
+spell.tfspellpack\:frost_breath.desc=시전한 방향으로 겨울 늑대의 숨결을 발사합니다, 목표를 얼리고 피해를 줍니다.
+spell.tfspellpack\:ghast_trap.desc="날아라, 나의 소환수들아!"
+spell.tfspellpack\:hydra_bomb.desc=시전한 방향으로 폭발하는 히드라의 박격포를 발사합니다.
+spell.tfspellpack\:hydras_vigour.desc="...강력한 히드라를 죽인 그들은, 별들이 우거진 어둑한 하늘 앞에서, 생명을 주는 히드라의 고기를 먹었다."
+spell.tfspellpack\:ice_bomb.desc=시전한 방향으로 얼음 폭탄을 발사합니다.
+spell.tfspellpack\:ironwood_heart.desc=30초 동안 시전자의 자연적인 회복속도가 급격히 증가합니다.
+spell.tfspellpack\:life_charm.desc=시전자의 하트 4칸을 치유하고, 시전자에게 재생 물약 효과를 부여합니다.
+spell.tfspellpack\:mist_cloak.desc=30초 동안 안개 늑대처럼 시전자가 어둠 속에서 사라집니다.
+spell.tfspellpack\:moonworm.desc=시전한 방향으로 달벌레를 발사하여 발사된 지점을 밝힙니다.
+spell.tfspellpack\:pocket_tinkerer.desc=분해 작업대는 고블린의 기원만큼 이상하고 희귀한 제작대입니다. 하지만, 더 이상한 것은 어떻게 이 책 안에 분해 작업대가 들어갔는지입니다...
+spell.tfspellpack\:snow_guardian_horde.desc="눈의 여왕에게 홀린 방랑자는 마치 무언가를 찾는 듯 지칠 줄 모르고 복도를 배회한다. 그들은 무엇을 찾고 있는가? 우리는 절대 알 수 없다."
+spell.tfspellpack\:summon_cave_troll.desc=30초 동안 시전자를 위해 싸우는 동굴 트롤을 소환합니다.
+spell.tfspellpack\:summon_fire_beetle.desc=30초 동안 시전자를 위해 싸우는 불꽃 딱정벌레를 소환합니다.
+spell.tfspellpack\:summon_goblin.desc=30초 동안 시전자를 위해 싸우는 붉은모자 고블린을 소환합니다.
+spell.tfspellpack\:summon_ice_core.desc=30초 동안 시전자를 위해 싸우는 얼음 핵을 소환합니다.
+spell.tfspellpack\:summon_skeleton_druid.desc=30초 동안 시전자를 위해 싸우는 스켈레톤 드루이드를 소환합니다.
+spell.tfspellpack\:summon_slime_beetle.desc=30초 동안 시전자를 위해 싸우는 슬라임 딱정벌레를 소환합니다.
+spell.tfspellpack\:summon_twilight_wraith.desc=30초 동안 시전자를 위해 싸우는 황혼숲 유령를 소환합니다.
+spell.tfspellpack\:suffocating_mist.desc=어두운 숲은 희미한 마음을 가진 자에게는 어울리지 않는다.
+spell.tfspellpack\:transformation.desc=대상을 같은 종류의 황혼의 형태로 바꿉니다. 몇몇 생명체에게만 적용됩니다.
+spell.tfspellpack\:twilight_catalyst.desc=황혼의 숲 포탈에 불을 붙입니다.
+spell.tfspellpack\:twilight_orb.desc=시전한 방향으로 황혼의 보주를 발사합니다.
+
+potion.tfspellpack\:mist_cloak=안개 은폐
+potion.tfspellpack\:ironwood_heart=아이언우드 심장
+
+advancement.tfspellpack\:twilight_spell=황혼에 물든 마법사
+advancement.tfspellpack\:twilight_spell.desc=황혼 속에서 황혼 주문서나 두루마리를 찾아 잊힌 마법을 재발견하세요
+advancement.tfspellpack\:all_twilight_spells=수목의 마법사
+advancement.tfspellpack\:all_twilight_spells.desc=황혼의 모든 주문을 사용하세요
+advancement.tfspellpack\:twilight_artefact=이건 절대 그들에게 어울리지 않아
+advancement.tfspellpack\:twilight_artefact.desc=드루이드의 오두막 지하실에서 드루이드 마법사를 물리치고 그 마법사가 가지고있는 유물을 되찾으세요
+advancement.tfspellpack\:all_twilight_artefacts=숲의 보석
+advancement.tfspellpack\:all_twilight_artefacts.desc=황혼의 숲의 모든 반지와 목걸이, 부적을 수집하세요
+
+config.tfspellpack.loot_injection_locations=Loot Injection Locations
+config.tfspellpack.loot_injection_locations.tooltip=List of loot tables to inject twilight forest spell pack loot (as specified in loot_tables/chests/tf_dungeon_additions.json) into.
+config.tfspellpack.druid_mage_spawn_chance=Druid Mage Spawn Chance
+config.tfspellpack.druid_mage_spawn_chance.tooltip=The chance for a druid hut basement to contain a druid mage. Set to zero to disable this mechanic (doing so will make TF artefacts unobtainable without a custom means of obtaing them).
