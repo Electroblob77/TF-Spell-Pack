@@ -4,13 +4,13 @@ import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.entity.construct.EntityFireJet;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.tfspellpack.util.TFSPUtils;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellConstruct;
 import electroblob.wizardry.util.BlockUtils;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -24,7 +24,7 @@ public class FireJets extends SpellConstruct<EntityFireJet> {
 	public static final String FIRE_JETS = "fire_jets";
 
 	public FireJets(){
-		super(TFSpellPack.MODID, "fire_jets", EnumAction.BOW, EntityFireJet::new, false);
+		super(TFSpellPack.MODID, "fire_jets", SpellActions.POINT_UP, EntityFireJet::new, false);
 		this.soundValues(3, 1, 0.2f);
 		addProperties(EFFECT_RADIUS, FIRE_JETS, DAMAGE, BURN_DURATION);
 		this.overlap(true);

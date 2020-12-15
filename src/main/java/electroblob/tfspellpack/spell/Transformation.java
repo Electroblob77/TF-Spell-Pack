@@ -7,6 +7,7 @@ import electroblob.tfspellpack.entity.living.EntityTwilightWraithMinion;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.wizardry.Wizardry;
 import electroblob.wizardry.entity.living.EntityBlazeMinion;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.NBTExtras;
@@ -18,7 +19,6 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.*;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -63,7 +63,7 @@ public class Transformation extends SpellRay {
 	}
 
 	public Transformation(){
-		super(TFSpellPack.MODID, "transformation", EnumAction.NONE, false);
+		super(TFSpellPack.MODID, "transformation", SpellActions.POINT, false);
 		this.soundValues(0.5f, 1f, 0);
 	}
 

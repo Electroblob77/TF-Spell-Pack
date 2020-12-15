@@ -3,6 +3,7 @@ package electroblob.tfspellpack.spell;
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.tfspellpack.util.TFSPUtils;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.EntityUtils;
@@ -14,7 +15,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityMagmaCube;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.EnumFacing;
@@ -31,7 +31,7 @@ import javax.annotation.Nullable;
 public class FrostBreath extends SpellRay {
 
 	public FrostBreath(){
-		super(TFSpellPack.MODID, "frost_breath", EnumAction.NONE, true);
+		super(TFSpellPack.MODID, "frost_breath", SpellActions.POINT, true);
 		this.aimAssist(0.3f); // A bit of artistic license, makes it more unique from the regular frost ray
 		this.soundValues(0.5f, 0.5f, 0);
 		this.npcSelector(TFSPUtils.IN_TF_DIMENSION);

@@ -2,6 +2,7 @@ package electroblob.tfspellpack.spell;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.Entity;
@@ -10,7 +11,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumParticleTypes;
@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 public class TwilightCatalyst extends SpellRay {
 
 	public TwilightCatalyst(){
-		super(TFSpellPack.MODID, "twilight_catalyst", EnumAction.NONE, false);
+		super(TFSpellPack.MODID, "twilight_catalyst", SpellActions.POINT, false);
 		this.hitLiquids(true);
 	}
 

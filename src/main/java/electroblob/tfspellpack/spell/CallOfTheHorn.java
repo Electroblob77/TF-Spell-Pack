@@ -2,6 +2,7 @@ package electroblob.tfspellpack.spell;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.SpellModifiers;
@@ -9,7 +10,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -43,7 +43,7 @@ public class CallOfTheHorn extends SpellRay {
 	}
 
 	public CallOfTheHorn(){
-		super(TFSpellPack.MODID, "call_of_the_horn", EnumAction.BOW, true);
+		super(TFSpellPack.MODID, "call_of_the_horn", SpellActions.POINT_UP, true);
 		this.ignoreLivingEntities(true);
 		this.hitLiquids(false);
 		this.soundValues(1, 0.8f, 0);

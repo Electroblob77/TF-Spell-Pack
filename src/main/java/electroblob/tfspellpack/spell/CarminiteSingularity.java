@@ -4,6 +4,7 @@ import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.tfspellpack.util.TFSPUtils;
 import electroblob.wizardry.item.ItemArtefact;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.*;
@@ -15,7 +16,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.network.play.server.SPacketEntityVelocity;
 import net.minecraft.tileentity.TileEntityDispenser;
@@ -39,7 +39,7 @@ public class CarminiteSingularity extends Spell {
 	private static final double SUCTION_STRENGTH = 0.05;
 
 	public CarminiteSingularity(){
-		super(TFSpellPack.MODID, "carminite_singularity", EnumAction.BOW, true);
+		super(TFSpellPack.MODID, "carminite_singularity", SpellActions.POINT_UP, true);
 		addProperties(EFFECT_RADIUS, DAMAGE);
 		this.npcSelector(TFSPUtils.IN_TF_DIMENSION);
 	}

@@ -4,6 +4,7 @@ import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.tfspellpack.util.TFSPParticles;
 import electroblob.tfspellpack.util.TFSPUtils;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.registry.WizardrySounds;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.BlockUtils;
@@ -15,7 +16,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.util.DamageSource;
@@ -35,7 +35,7 @@ import javax.annotation.Nullable;
 public class Annihilation extends SpellRay {
 
 	public Annihilation(){
-		super(TFSpellPack.MODID, "annihilation", EnumAction.NONE, false);
+		super(TFSpellPack.MODID, "annihilation", SpellActions.POINT, false);
 		addProperties(DAMAGE);
 		this.npcSelector(TFSPUtils.IN_TF_DIMENSION);
 	}

@@ -3,10 +3,10 @@ package electroblob.tfspellpack.spell;
 import electroblob.tfspellpack.TFSPGuiHandler;
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
+import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 public class PocketTinkerer extends Spell {
 
 	public PocketTinkerer(){
-		super(TFSpellPack.MODID, "pocket_tinkerer", EnumAction.BOW, false);
+		super(TFSpellPack.MODID, "pocket_tinkerer", SpellActions.POINT_UP, false);
 	}
 
 	@Override
