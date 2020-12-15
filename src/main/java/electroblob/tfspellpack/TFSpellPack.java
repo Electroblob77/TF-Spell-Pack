@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
  * @since TF Spell Pack 1.0
  */
 @Mod(modid = TFSpellPack.MODID, name = TFSpellPack.NAME, version = TFSpellPack.VERSION, acceptedMinecraftVersions = "[1.12.2]",
-		dependencies = "required-after:forge@[14.23.5.2814,);required-after:ebwizardry@[4.2.9,4.3);required-after:twilightforest@[3.10.1013,)")
+		dependencies = "required-after:forge@[14.23.5.2814,);required-after:ebwizardry@[4.3.1,4.4);required-after:twilightforest@[3.11.1021,)")
 
 public class TFSpellPack {
 
