@@ -3,6 +3,7 @@ package electroblob.tfspellpack.registry;
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.item.ItemTwilightSpellBook;
 import electroblob.wizardry.block.BlockBookshelf;
+import electroblob.wizardry.inventory.ContainerBookshelf;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.item.ItemScroll;
 import electroblob.wizardry.misc.BehaviourSpellDispense;
@@ -151,6 +152,12 @@ public final class TFSPItems {
 	public static void registerBookshelfModelTextures(){
 		BlockBookshelf.registerBookModelTexture(() -> TFSPItems.twilight_spell_book, new ResourceLocation(TFSpellPack.MODID, "blocks/books_twilight"));
 		BlockBookshelf.registerBookModelTexture(() -> TFSPItems.twilight_scroll, new ResourceLocation(TFSpellPack.MODID, "blocks/scrolls_twilight"));
+	}
+
+	/** Called from init() in the main mod class to register tf spell pack's book items with wizardry's bookshelves. */
+	public static void registerBookItems(){
+		ContainerBookshelf.registerBookItem(TFSPItems.twilight_spell_book);
+		ContainerBookshelf.registerBookItem(TFSPItems.twilight_scroll);
 	}
 
 }

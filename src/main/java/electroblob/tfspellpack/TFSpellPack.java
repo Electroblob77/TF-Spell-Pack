@@ -50,6 +50,7 @@ public class TFSpellPack {
     @EventHandler
     public void init(FMLInitializationEvent event){
         TFSPItems.registerDispenseBehaviours();
+        TFSPItems.registerBookItems();
         proxy.registerParticles();
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new TFSPGuiHandler());
     }
