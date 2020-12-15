@@ -2,6 +2,7 @@ package electroblob.tfspellpack.registry;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.item.ItemTwilightSpellBook;
+import electroblob.wizardry.block.BlockBookshelf;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.item.ItemScroll;
 import electroblob.wizardry.misc.BehaviourSpellDispense;
@@ -13,6 +14,7 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -143,6 +145,12 @@ public final class TFSPItems {
 	/** Called from init() in the main mod class to register tf spell pack's dispenser behaviours. */
 	public static void registerDispenseBehaviours(){
 		BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(twilight_scroll, new BehaviourSpellDispense());
+	}
+
+	/** Called from preInit() in the main mod class to register tf spell pack's bookshelf model textures. */
+	public static void registerBookshelfModelTextures(){
+		BlockBookshelf.registerBookModelTexture(() -> TFSPItems.twilight_spell_book, new ResourceLocation(TFSpellPack.MODID, "blocks/books_twilight"));
+		BlockBookshelf.registerBookModelTexture(() -> TFSPItems.twilight_scroll, new ResourceLocation(TFSpellPack.MODID, "blocks/scrolls_twilight"));
 	}
 
 }
