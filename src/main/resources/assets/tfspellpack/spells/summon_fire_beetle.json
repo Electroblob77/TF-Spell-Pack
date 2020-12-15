@@ -14,7 +14,7 @@
 	"element": "fire",
 	"type": "minion",
 	"cost": 60,
-	"chargeup": 0,
+	"chargeup": 10,
 	"cooldown": 300,
 	"base_properties": {
 		"minion_lifetime": 600,

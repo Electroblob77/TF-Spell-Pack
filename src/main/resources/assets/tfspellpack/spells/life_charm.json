@@ -14,7 +14,7 @@
 	"element": "healing",
 	"type": "buff",
 	"cost": 40,
-	"chargeup": 0,
+	"chargeup": 10,
 	"cooldown": 80,
 	"base_properties": {
 		"regeneration_duration": 200,

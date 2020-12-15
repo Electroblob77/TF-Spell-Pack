@@ -14,7 +14,7 @@
 	"element": "necromancy",
 	"type": "minion",
 	"cost": 65,
-	"chargeup": 0,
+	"chargeup": 15,
 	"cooldown": 300,
 	"base_properties": {
 		"minion_lifetime": 600,
