@@ -7,9 +7,9 @@ import electroblob.tfspellpack.util.TFSPParticles;
 import electroblob.wizardry.entity.construct.EntityMagicConstruct;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.ParticleBuilder;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -84,7 +84,7 @@ public class EntityAcidRainCloud extends EntityMagicConstruct {
 				if(target.ticksExisted % 20 == 0){ // Use target's lifetime so they don't all get hit at once, looks better
 
 					if(!this.world.isRemote){
-						WizardryUtilities.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
+						EntityUtils.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
 								this.getCaster(), MagicDamage.DamageType.MAGIC), damage);
 						if(getCaster() instanceof EntityPlayer && ItemArtefact.isArtefactActive((EntityPlayer)getCaster(),
 								TFSPItems.ring_trollsteinn)){

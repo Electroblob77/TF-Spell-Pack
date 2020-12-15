@@ -77,7 +77,7 @@ public class ParticleDarkMist extends ParticleWizardry {
 		lookYZ = 0;
 
 		// Copied from ParticleWizardry, needs to be here since we're not calling super
-		updateEntityLinking(partialTicks);
+		updateEntityLinking(viewer, partialTicks);
 
 		GlStateManager.pushMatrix();
 

@@ -10,8 +10,8 @@ import electroblob.wizardry.constants.Tier;
 import electroblob.wizardry.entity.living.EntityEvilWizard;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.BlockUtils;
 import electroblob.wizardry.util.SpellProperties;
-import electroblob.wizardry.util.WizardryUtilities;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.block.BlockTrapDoor;
 import net.minecraft.entity.EntityList;
@@ -244,8 +244,8 @@ public class EntityDruidMage extends EntityEvilWizard {
 						if(world.rand.nextFloat() < Settings.druidMageSpawnChance){
 
 							// Only search downwards (but flip the surface criteria so we get floors, not ceilings!)
-							Integer floor = WizardryUtilities.getNearestSurface(world, pos, EnumFacing.DOWN, 16, false,
-									WizardryUtilities.SurfaceCriteria.COLLIDABLE.flip());
+							Integer floor = BlockUtils.getNearestSurface(world, pos, EnumFacing.DOWN, 16, false,
+									BlockUtils.SurfaceCriteria.COLLIDABLE.flip());
 
 							if(floor != null){
 								EntityDruidMage druidMage = new EntityDruidMage(world);

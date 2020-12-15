@@ -6,9 +6,9 @@ import electroblob.wizardry.event.SpellCastEvent;
 import electroblob.wizardry.integration.DamageSafetyChecker;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.item.ItemWizardArmour;
+import electroblob.wizardry.util.InventoryUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.SpellModifiers;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -100,7 +100,7 @@ public class TFSPArtefactHandler {
 
 				if(artefact == TFSPItems.amulet_steeleaf){
 
-					if(player.dimension == TFConfig.dimension.dimensionID && Arrays.stream(WizardryUtilities.ARMOUR_SLOTS)
+					if(player.dimension == TFConfig.dimension.dimensionID && Arrays.stream(InventoryUtils.ARMOUR_SLOTS)
 							.map(s -> player.getItemStackFromSlot(s).getItem())
 							.allMatch(i -> i instanceof ItemWizardArmour)){
 						event.setAmount(event.getAmount() * 0.9f);

@@ -3,7 +3,6 @@ package electroblob.tfspellpack.spell;
 import electroblob.tfspellpack.TFSPGuiHandler;
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
-import electroblob.tfspellpack.util.TFSPUtils;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.player.EntityPlayer;

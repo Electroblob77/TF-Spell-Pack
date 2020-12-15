@@ -4,10 +4,10 @@ import electroblob.tfspellpack.registry.TFSPSounds;
 import electroblob.tfspellpack.registry.TFSPSpells;
 import electroblob.wizardry.entity.construct.EntityMagicConstruct;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.ParticleBuilder.Type;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.world.World;
 
@@ -59,7 +59,7 @@ public class EntityCinderCloud extends EntityMagicConstruct {
 				if(this.isValidTarget(target) && !MagicDamage.isEntityImmune(MagicDamage.DamageType.FIRE, target)){
 
 					if(target.ticksExisted % 20 == 0){ // Use target's lifetime so they don't all get hit at once, looks better
-						WizardryUtilities.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
+						EntityUtils.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
 								this.getCaster(), MagicDamage.DamageType.FIRE), damage);
 						target.setFire(TFSPSpells.cinder_cloud.getProperty(Spell.BURN_DURATION).intValue());
 					}

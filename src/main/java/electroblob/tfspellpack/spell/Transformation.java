@@ -8,11 +8,11 @@ import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.wizardry.Wizardry;
 import electroblob.wizardry.entity.living.EntityBlazeMinion;
 import electroblob.wizardry.spell.SpellRay;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.NBTExtras;
 import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.ParticleBuilder.Type;
 import electroblob.wizardry.util.SpellModifiers;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -63,7 +63,7 @@ public class Transformation extends SpellRay {
 	}
 
 	public Transformation(){
-		super(TFSpellPack.MODID, "transformation", false, EnumAction.NONE);
+		super(TFSpellPack.MODID, "transformation", EnumAction.NONE, false);
 		this.soundValues(0.5f, 1f, 0);
 	}
 
@@ -80,7 +80,7 @@ public class Transformation extends SpellRay {
 	@Override
 	protected boolean onEntityHit(World world, Entity target, Vec3d hit, EntityLivingBase caster, Vec3d origin, int ticksInUse, SpellModifiers modifiers){
 
-		if(WizardryUtilities.isLiving(target)){
+		if(EntityUtils.isLiving(target)){
 
 			double xPos = target.posX;
 			double yPos = target.posY;

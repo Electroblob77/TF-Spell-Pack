@@ -8,9 +8,9 @@ import electroblob.tfspellpack.util.TFSPUtils;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellMinion;
+import electroblob.wizardry.util.BlockUtils;
+import electroblob.wizardry.util.EntityUtils.Operations;
 import electroblob.wizardry.util.SpellModifiers;
-import electroblob.wizardry.util.WizardryUtilities;
-import electroblob.wizardry.util.WizardryUtilities.Operations;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -53,7 +53,7 @@ public class SummonIceCore extends SpellMinion<EntityStableIceCoreMinion> {
 				int range = getProperty(SUMMON_RADIUS).intValue();
 
 				// Try and find a nearby floor space
-				BlockPos pos = WizardryUtilities.findNearbyFloorSpace(caster, range, range*2);
+				BlockPos pos = BlockUtils.findNearbyFloorSpace(caster, range, range*2);
 
 				// If there was no floor around and the entity isn't a flying one, the spell fails.
 				// As per the javadoc for findNearbyFloorSpace, there's no point trying the rest of the minions.

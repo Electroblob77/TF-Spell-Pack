@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 public class TwilightCatalyst extends SpellRay {
 
 	public TwilightCatalyst(){
-		super(TFSpellPack.MODID, "twilight_catalyst", false, EnumAction.NONE);
+		super(TFSpellPack.MODID, "twilight_catalyst", EnumAction.NONE, false);
 		this.hitLiquids(true);
 	}
 

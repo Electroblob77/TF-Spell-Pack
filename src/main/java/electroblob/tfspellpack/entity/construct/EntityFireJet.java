@@ -4,9 +4,9 @@ import electroblob.tfspellpack.registry.TFSPSounds;
 import electroblob.tfspellpack.registry.TFSPSpells;
 import electroblob.wizardry.entity.construct.EntityMagicConstruct;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.MagicDamage.DamageType;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
@@ -52,7 +52,7 @@ public class EntityFireJet extends EntityMagicConstruct {
 				for(Entity target : targets){
 					if(this.isValidTarget(target) && !MagicDamage.isEntityImmune(MagicDamage.DamageType.FIRE, target)){
 						float damage = TFSPSpells.fire_jets.getProperty(Spell.DAMAGE).floatValue() * damageMultiplier;
-						WizardryUtilities.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this, getCaster(), DamageType.FIRE), damage);
+						EntityUtils.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this, getCaster(), DamageType.FIRE), damage);
 						target.setFire(TFSPSpells.fire_jets.getProperty(Spell.BURN_DURATION).intValue());
 					}
 				}

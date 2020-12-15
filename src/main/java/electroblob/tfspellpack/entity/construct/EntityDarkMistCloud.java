@@ -6,9 +6,9 @@ import electroblob.tfspellpack.spell.SuffocatingMist;
 import electroblob.tfspellpack.util.TFSPParticles;
 import electroblob.wizardry.entity.construct.EntityMagicConstruct;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.ParticleBuilder;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
@@ -55,7 +55,7 @@ public class EntityDarkMistCloud extends EntityMagicConstruct {
 
 					if(target.ticksExisted % 30 == 0){ // Use target's lifetime so they don't all get hit at once, looks better
 
-						WizardryUtilities.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
+						EntityUtils.attackEntityWithoutKnockback(target, MagicDamage.causeIndirectMagicDamage(this,
 								this.getCaster(), MagicDamage.DamageType.MAGIC), damage);
 
 						target.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS,

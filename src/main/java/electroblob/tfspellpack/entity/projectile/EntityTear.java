@@ -4,10 +4,10 @@ import electroblob.tfspellpack.registry.TFSPSounds;
 import electroblob.tfspellpack.registry.TFSPSpells;
 import electroblob.wizardry.entity.projectile.EntityMagicProjectile;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.EntityUtils;
 import electroblob.wizardry.util.MagicDamage;
 import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.ParticleBuilder.Type;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.RayTraceResult;
@@ -31,7 +31,7 @@ public class EntityTear extends EntityMagicProjectile {
 
 			float damage = TFSPSpells.rain_of_tears.getProperty(Spell.DAMAGE).floatValue() * this.damageMultiplier;
 
-			WizardryUtilities.attackEntityWithoutKnockback(result.entityHit, MagicDamage.causeIndirectMagicDamage(
+			EntityUtils.attackEntityWithoutKnockback(result.entityHit, MagicDamage.causeIndirectMagicDamage(
 					this, this.thrower, MagicDamage.DamageType.FIRE), damage);
 
 			result.entityHit.setFire(TFSPSpells.rain_of_tears.getProperty(Spell.BURN_DURATION).intValue());

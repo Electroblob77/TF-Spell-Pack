@@ -2,8 +2,6 @@ package electroblob.tfspellpack.entity.construct;
 
 import electroblob.tfspellpack.entity.projectile.EntityTear;
 import electroblob.wizardry.entity.construct.EntityMagicConstruct;
-import electroblob.wizardry.entity.projectile.EntityIceShard;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 public class EntityTearRain extends EntityMagicConstruct {

@@ -2,7 +2,6 @@ package electroblob.tfspellpack.spell;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.registry.TFSPItems;
-import electroblob.tfspellpack.util.TFSPUtils;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.SpellModifiers;
@@ -44,7 +43,7 @@ public class CallOfTheHorn extends SpellRay {
 	}
 
 	public CallOfTheHorn(){
-		super(TFSpellPack.MODID, "call_of_the_horn", true, EnumAction.BOW);
+		super(TFSpellPack.MODID, "call_of_the_horn", EnumAction.BOW, true);
 		this.ignoreLivingEntities(true);
 		this.hitLiquids(false);
 		this.soundValues(1, 0.8f, 0);

@@ -8,12 +8,9 @@ import electroblob.wizardry.data.WizardData;
 import electroblob.wizardry.item.ItemArtefact;
 import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
-import electroblob.wizardry.util.MagicDamage;
+import electroblob.wizardry.util.*;
 import electroblob.wizardry.util.MagicDamage.DamageType;
-import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.ParticleBuilder.Type;
-import electroblob.wizardry.util.SpellModifiers;
-import electroblob.wizardry.util.WizardryUtilities;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -81,7 +78,7 @@ public class ChariotOfIce extends Spell {
 		float knockback = getProperty(KNOCKBACK_STRENGTH).floatValue();
 
 		// Horizontal movement
-		Vec3d hLookVec = WizardryUtilities.replaceComponent(caster.getLookVec(), EnumFacing.Axis.Y, 0).normalize();
+		Vec3d hLookVec = GeometryUtils.replaceComponent(caster.getLookVec(), EnumFacing.Axis.Y, 0).normalize();
 		double hSpeedSquared = caster.motionX * caster.motionX + caster.motionZ * caster.motionZ;
 
 		if(caster.moveForward != 0){
@@ -129,7 +126,7 @@ public class ChariotOfIce extends Spell {
 
 				hoverHeight += MathHelper.sin(ticksInUse / HOVER_ANIMATION_PERIOD) * HOVER_ANIMATION_MAGNITUDE; // Floaty
 
-				Integer floor = WizardryUtilities.getNearestFloor(world, caster.getPosition(), MathHelper.ceil(hoverHeight) + 1);
+				Integer floor = BlockUtils.getNearestFloor(world, caster.getPosition(), MathHelper.ceil(hoverHeight) + 1);
 
 				if(floor != null){ // If floor is more than 3 blocks away, allow caster to fall normally
 					caster.motionY = Math.min(((floor + hoverHeight - caster.posY) * VERTICAL_ACCELERATION_FACTOR),
@@ -169,7 +166,7 @@ public class ChariotOfIce extends Spell {
 
 			float maxDamage = getProperty(MAX_CRUSH_DAMAGE).floatValue() * modifiers.get(SpellModifiers.POTENCY);
 
-			List<EntityLivingBase> targets = WizardryUtilities.getEntitiesWithinRadius(radius, caster.posX, caster.posY, caster.posZ, world);
+			List<EntityLivingBase> targets = EntityUtils.getLivingWithinRadius(radius, caster.posX, caster.posY, caster.posZ, world);
 
 			for(EntityLivingBase target : targets){
 
@@ -185,13 +182,14 @@ public class ChariotOfIce extends Spell {
 			}
 
 			// Smashing!
-			if(!world.isRemote && WizardryUtilities.canDamageBlocks(caster, world)
+			if(!world.isRemote && EntityUtils.canDamageBlocks(caster, world)
 					&& ItemArtefact.isArtefactActive(caster, TFSPItems.ring_aurora)){
 				double radius1 = radius * BLOCK_BREAK_RADIUS_FRACTION;
-				WizardryUtilities.getBlockSphere(caster.getPosition(), radius1).forEach(pos -> {
+				BlockUtils.getBlockSphere(caster.getPosition(), radius1).forEach(pos -> {
 					// Greater chance of destroying block nearer to the centre
-					if(!WizardryUtilities.isBlockUnbreakable(world, pos) && world.rand.nextDouble() >
-							WizardryUtilities.getCentre(pos).distanceTo(caster.getPositionVector()) / radius1 - 0.3)
+					if(!BlockUtils.isBlockUnbreakable(world, pos) && world.rand.nextDouble() >
+							GeometryUtils.getCentre(pos).distanceTo(caster.getPositionVector()) / radius1 - 0.3
+							&& BlockUtils.canBreakBlock(caster, world, pos))
 						world.destroyBlock(pos, true);
 				});
 			}
@@ -204,7 +202,7 @@ public class ChariotOfIce extends Spell {
 
 					double x = caster.posX - 1 + 2 * world.rand.nextDouble();
 					double z = caster.posZ - 1 + 2 * world.rand.nextDouble();
-					IBlockState block = WizardryUtilities.getBlockEntityIsStandingOn(caster);
+					IBlockState block = BlockUtils.getBlockEntityIsStandingOn(caster);
 
 					if(block != null){
 						world.spawnParticle(EnumParticleTypes.BLOCK_DUST, x, caster.getEntityBoundingBox().minY,
@@ -220,14 +218,14 @@ public class ChariotOfIce extends Spell {
 
 	@SubscribeEvent
 	public static void onPlayerFlyableFallEvent(PlayerFlyableFallEvent event){
-		if(WizardryUtilities.isCasting(event.getEntityLiving(), TFSPSpells.chariot_of_ice)){
+		if(EntityUtils.isCasting(event.getEntityLiving(), TFSPSpells.chariot_of_ice)){
 			((ChariotOfIce)TFSPSpells.chariot_of_ice).slamGround(event.getEntityPlayer());
 		}
 	}
 
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public static void onLivingFallEvent(LivingFallEvent event){
-		if(event.getEntity() instanceof EntityPlayer && WizardryUtilities.isCasting(event.getEntityLiving(), TFSPSpells.chariot_of_ice)){
+		if(event.getEntity() instanceof EntityPlayer && EntityUtils.isCasting(event.getEntityLiving(), TFSPSpells.chariot_of_ice)){
 			((ChariotOfIce)TFSPSpells.chariot_of_ice).slamGround((EntityPlayer)event.getEntity());
 			event.setCanceled(true);
 		}
