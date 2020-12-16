@@ -1,8 +1,8 @@
 # Credits
 
 Electroblob's Wizardry: Twilight Forest Spell Pack  
-Version 1.0.2  
-For Minecraft 1.12.2, Twilight Forest 3.10 and Wizardry 4.2
+Version 1.1.0  
+For Minecraft 1.12.2, Twilight Forest 3.10 and Wizardry 4.3
 
 Designed, coded and textured by Electroblob
 
