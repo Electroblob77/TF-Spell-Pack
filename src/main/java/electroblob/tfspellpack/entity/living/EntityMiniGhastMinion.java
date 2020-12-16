@@ -107,6 +107,11 @@ public class EntityMiniGhastMinion extends EntityTFMiniGhast implements ISummone
 	}
 
 	@Override
+	public int getAnimationColour(float animationProgress){
+		return 0xd43333;
+	}
+
+	@Override
 	protected boolean processInteract(EntityPlayer player, EnumHand hand){
 		// In this case, the delegate method determines whether super is called.
 		// Rather handily, we can make use of Java's short-circuiting method of evaluating OR statements.

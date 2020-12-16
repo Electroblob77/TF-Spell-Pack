@@ -1,6 +1,7 @@
 package electroblob.tfspellpack.entity.living;
 
 import electroblob.wizardry.Wizardry;
+import electroblob.wizardry.client.DrawingUtils;
 import electroblob.wizardry.entity.living.ISummonedCreature;
 import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.ParticleBuilder.Type;
@@ -100,6 +101,11 @@ public class EntitySnowGuardianMinion extends EntityTFSnowGuardian implements IS
 	@Override
 	public boolean hasParticleEffect(){
 		return false;
+	}
+
+	@Override
+	public int getAnimationColour(float animationProgress){
+		return DrawingUtils.mix(0xffffff, 0x73e1ff, animationProgress);
 	}
 
 	@Override
