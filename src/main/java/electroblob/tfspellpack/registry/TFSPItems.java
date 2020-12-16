@@ -2,6 +2,8 @@ package electroblob.tfspellpack.registry;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.item.ItemTwilightSpellBook;
+import electroblob.wizardry.Settings;
+import electroblob.wizardry.Wizardry;
 import electroblob.wizardry.block.BlockBookshelf;
 import electroblob.wizardry.inventory.ContainerBookshelf;
 import electroblob.wizardry.item.ItemArtefact;
@@ -21,6 +23,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
+import org.apache.commons.lang3.ArrayUtils;
 
 import javax.annotation.Nonnull;
 
@@ -186,6 +189,17 @@ public final class TFSPItems {
 	public static void registerBookItems(){
 		ContainerBookshelf.registerBookItem(TFSPItems.twilight_spell_book);
 		ContainerBookshelf.registerBookItem(TFSPItems.twilight_scroll);
+		// Bit of a hack due to an oversight in wizardry, will do this properly at some point
+		Wizardry.settings.bookshelfBlocks = ArrayUtils.addAll(Wizardry.settings.bookshelfBlocks, Settings.parseItemMetaStrings(
+				TFSpellPack.MODID + ":twilight_oak_bookshelf",
+				TFSpellPack.MODID + ":canopy_bookshelf",
+				TFSpellPack.MODID + ":mangrove_bookshelf",
+				TFSpellPack.MODID + ":darkwood_bookshelf",
+				TFSpellPack.MODID + ":timewood_bookshelf",
+				TFSpellPack.MODID + ":transwood_bookshelf",
+				TFSpellPack.MODID + ":minewood_bookshelf",
+				TFSpellPack.MODID + ":sortingwood_bookshelf"
+		));
 	}
 
 }
