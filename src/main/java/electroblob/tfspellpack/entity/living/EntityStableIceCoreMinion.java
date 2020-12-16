@@ -89,10 +89,10 @@ public class EntityStableIceCoreMinion extends EntityTFIceShooter implements ISu
 		if(this.world.isRemote){
 			for(int i = 0; i < 15; i++){
 				float brightness = 0.5f + this.rand.nextFloat() / 2.0f;
-				ParticleBuilder.create(Type.SPARKLE).pos(this.posX - 0.5 + this.rand.nextDouble(),
-						this.posY + (double)(this.height / 2.0f) - 0.5 + this.rand.nextDouble(),
-						this.posZ - 0.5 + this.rand.nextDouble()).vel(0, 0.05, 0)
-						.time(20 + this.rand.nextInt(10)).clr(brightness, brightness + 0.1f, 1.0f)
+				ParticleBuilder.create(Type.SPARKLE, this)
+						.vel(0, 0.05, 0)
+						.time(20 + this.rand.nextInt(10))
+						.clr(brightness, brightness + 0.1f, 1.0f)
 						.spawn(this.world);
 			}
 		}

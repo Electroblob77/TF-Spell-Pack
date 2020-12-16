@@ -88,10 +88,7 @@ public class EntitySlimeBeetleMinion extends EntityTFSlimeBeetle implements ISum
 	private void spawnParticleEffect(){
 		if(this.world.isRemote){
 			for(int i = 0; i < 15; i++){
-				ParticleBuilder.create(Type.DARK_MAGIC)
-						.pos(this.posX + this.rand.nextFloat(), this.posY + this.rand.nextFloat(), this.posZ + this.rand.nextFloat())
-						.clr(0.1f, 0.2f, 0.0f)
-						.spawn(world);
+				ParticleBuilder.create(Type.DARK_MAGIC, this).clr(0.1f, 0.2f, 0.0f).spawn(world);
 			}
 		}
 	}

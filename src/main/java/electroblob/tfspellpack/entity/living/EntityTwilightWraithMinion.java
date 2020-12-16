@@ -83,9 +83,8 @@ public class EntityTwilightWraithMinion extends EntityTFWraith implements ISummo
 	protected void spawnParticleEffect(){
 		if(this.world.isRemote){
 			for(int i = 0; i < 15; i++){
-				this.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX + (double)this.rand.nextFloat(),
-						this.posY + 1 + (double)this.rand.nextFloat(),
-						this.posZ + (double)this.rand.nextFloat(), 0, 0, 0);
+				this.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX + this.rand.nextFloat() - 0.5f,
+						this.posY + this.rand.nextFloat() * 2, this.posZ + this.rand.nextFloat() - 0.5f, 0, 0, 0);
 			}
 		}
 	}
