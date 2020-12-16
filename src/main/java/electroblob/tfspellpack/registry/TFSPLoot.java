@@ -2,9 +2,11 @@ package electroblob.tfspellpack.registry;
 
 import electroblob.tfspellpack.Settings;
 import electroblob.tfspellpack.TFSpellPack;
+import electroblob.tfspellpack.util.LootConditionInTF;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
+import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -24,7 +26,12 @@ public final class TFSPLoot {
 
 	/** Called from the preInit method in the main mod class to register the custom dungeon loot. */
 	public static void register(){
+
 		LootTableList.register(new ResourceLocation(TFSpellPack.MODID, "chests/tf_dungeon_additions"));
+		LootTableList.register(new ResourceLocation(TFSpellPack.MODID, "subsets/uncommon_artefacts"));
+		LootTableList.register(new ResourceLocation(TFSpellPack.MODID, "subsets/rare_artefacts"));
+		LootTableList.register(new ResourceLocation(TFSpellPack.MODID, "subsets/epic_artefacts"));
+		LootTableList.register(new ResourceLocation(TFSpellPack.MODID, "entities/druid_mage"));
 	}
 
 	@SubscribeEvent
