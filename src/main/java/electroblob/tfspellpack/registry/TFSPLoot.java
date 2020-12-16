@@ -2,11 +2,9 @@ package electroblob.tfspellpack.registry;
 
 import electroblob.tfspellpack.Settings;
 import electroblob.tfspellpack.TFSpellPack;
-import electroblob.tfspellpack.util.LootConditionInTF;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
-import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
