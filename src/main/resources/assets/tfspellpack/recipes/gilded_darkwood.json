@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"www",
+		"wgw",
+		"www"
+	],
+	"key": {
+		"g": {
+			"type": "forge:ore_dict",
+			"ore": "nuggetGold"
+		},
+		"w": {
+			"item": "twilightforest:dark_planks"
+		}
+	},
+	"result": {
+		"item": "tfspellpack:gilded_darkwood",
+		"data": 0,
+		"count": 8
+	}
+}

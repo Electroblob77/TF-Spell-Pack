@@ -1,0 +1,9 @@
+{
+	"parent": "ebwizardry:block/bookshelf",
+	"textures": {
+		"particle": "tfspellpack:blocks/twilight_oak_bookshelf_side",
+		"side": "tfspellpack:blocks/twilight_oak_bookshelf_side",
+		"inside": "tfspellpack:blocks/twilight_oak_bookshelf_inside",
+		"top": "tfspellpack:blocks/twilight_oak_bookshelf_top"
+	}
+}

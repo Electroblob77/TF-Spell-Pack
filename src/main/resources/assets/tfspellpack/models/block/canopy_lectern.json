@@ -1,0 +1,10 @@
+{
+	"parent": "ebwizardry:block/lectern",
+	"textures": {
+		"particle": "tfspellpack:blocks/canopy_lectern_top",
+		"base": "tfspellpack:blocks/canopy_lectern_base",
+		"side": "tfspellpack:blocks/canopy_lectern_side",
+		"top": "tfspellpack:blocks/canopy_lectern_top",
+		"underside": "tfspellpack:blocks/canopy_lectern_underside"
+	}
+}

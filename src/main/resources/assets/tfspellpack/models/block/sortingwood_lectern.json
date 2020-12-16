@@ -1,0 +1,10 @@
+{
+	"parent": "ebwizardry:block/lectern",
+	"textures": {
+		"particle": "tfspellpack:blocks/sortingwood_lectern_top",
+		"base": "tfspellpack:blocks/sortingwood_lectern_base",
+		"side": "tfspellpack:blocks/sortingwood_lectern_side",
+		"top": "tfspellpack:blocks/sortingwood_lectern_top",
+		"underside": "tfspellpack:blocks/sortingwood_lectern_underside"
+	}
+}

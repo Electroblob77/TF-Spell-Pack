@@ -1,0 +1,9 @@
+{
+	"parent": "ebwizardry:block/bookshelf",
+	"textures": {
+		"particle": "tfspellpack:blocks/mangrove_bookshelf_side",
+		"side": "tfspellpack:blocks/mangrove_bookshelf_side",
+		"inside": "tfspellpack:blocks/mangrove_bookshelf_inside",
+		"top": "tfspellpack:blocks/mangrove_bookshelf_top"
+	}
+}

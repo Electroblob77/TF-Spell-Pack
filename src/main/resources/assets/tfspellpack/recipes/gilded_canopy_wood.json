@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"www",
+		"wgw",
+		"www"
+	],
+	"key": {
+		"g": {
+			"type": "forge:ore_dict",
+			"ore": "nuggetGold"
+		},
+		"w": {
+			"item": "twilightforest:canopy_planks"
+		}
+	},
+	"result": {
+		"item": "tfspellpack:gilded_canopy_wood",
+		"data": 0,
+		"count": 8
+	}
+}

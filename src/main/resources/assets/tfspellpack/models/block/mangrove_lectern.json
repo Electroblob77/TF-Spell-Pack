@@ -1,0 +1,10 @@
+{
+	"parent": "ebwizardry:block/lectern",
+	"textures": {
+		"particle": "tfspellpack:blocks/mangrove_lectern_top",
+		"base": "tfspellpack:blocks/mangrove_lectern_base",
+		"side": "tfspellpack:blocks/mangrove_lectern_side",
+		"top": "tfspellpack:blocks/mangrove_lectern_top",
+		"underside": "tfspellpack:blocks/mangrove_lectern_underside"
+	}
+}

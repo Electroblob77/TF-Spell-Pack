@@ -122,6 +122,34 @@ public final class TFSPItems {
 
 		IForgeRegistry<Item> registry = event.getRegistry();
 
+		// ItemBlocks
+		registerItemBlock(registry, TFSPBlocks.gilded_twilight_oak_wood);
+		registerItemBlock(registry, TFSPBlocks.gilded_canopy_wood);
+		registerItemBlock(registry, TFSPBlocks.gilded_mangrove_wood);
+		registerItemBlock(registry, TFSPBlocks.gilded_darkwood);
+		registerItemBlock(registry, TFSPBlocks.gilded_timewood);
+		registerItemBlock(registry, TFSPBlocks.gilded_transwood);
+		registerItemBlock(registry, TFSPBlocks.gilded_minewood);
+		registerItemBlock(registry, TFSPBlocks.gilded_sortingwood);
+
+		registerItemBlock(registry, TFSPBlocks.twilight_oak_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.canopy_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.mangrove_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.darkwood_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.timewood_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.transwood_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.minewood_bookshelf);
+		registerItemBlock(registry, TFSPBlocks.sortingwood_bookshelf);
+
+		registerItemBlock(registry, TFSPBlocks.twilight_oak_lectern);
+		registerItemBlock(registry, TFSPBlocks.canopy_lectern);
+		registerItemBlock(registry, TFSPBlocks.mangrove_lectern);
+		registerItemBlock(registry, TFSPBlocks.darkwood_lectern);
+		registerItemBlock(registry, TFSPBlocks.timewood_lectern);
+		registerItemBlock(registry, TFSPBlocks.transwood_lectern);
+		registerItemBlock(registry, TFSPBlocks.minewood_lectern);
+		registerItemBlock(registry, TFSPBlocks.sortingwood_lectern);
+
 		// Items
 		registerItem(registry, "twilight_spell_book", new ItemTwilightSpellBook());
 		registerItem(registry, "twilight_scroll", new ItemScroll());

@@ -1,11 +1,13 @@
 package electroblob.tfspellpack.client.model;
 
+import electroblob.tfspellpack.registry.TFSPBlocks;
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.wizardry.item.IMultiTexturedItem;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -29,6 +31,33 @@ public final class TFSPModels {
 	public static void register(ModelRegistryEvent event){
 
 		// ItemBlocks
+
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_twilight_oak_wood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_canopy_wood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_mangrove_wood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_darkwood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_timewood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_transwood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_minewood));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.gilded_sortingwood));
+
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.twilight_oak_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.canopy_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.mangrove_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.darkwood_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.timewood_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.transwood_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.minewood_bookshelf));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.sortingwood_bookshelf));
+
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.twilight_oak_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.canopy_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.mangrove_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.darkwood_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.timewood_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.transwood_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.minewood_lectern));
+		registerItemModel(ItemBlock.getItemFromBlock(TFSPBlocks.sortingwood_lectern));
 
 		// Items
 

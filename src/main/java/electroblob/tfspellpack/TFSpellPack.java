@@ -2,8 +2,6 @@ package electroblob.tfspellpack;
 
 import electroblob.tfspellpack.registry.TFSPItems;
 import electroblob.tfspellpack.registry.TFSPLoot;
-import electroblob.wizardry.block.BlockBookshelf;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
