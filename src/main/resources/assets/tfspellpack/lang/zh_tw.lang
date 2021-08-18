@@ -1,9 +1,9 @@
 # PARSE_ESCAPES
-item.tfspellpack\:twilight_spell_book.name=暮色法術書
-item.tfspellpack\:twilight_scroll.name=暮色法術卷軸
+item.tfspellpack\:twilight_spell_book.name=暮光法術書
+item.tfspellpack\:twilight_scroll.name=暮光法術卷軸
 
-item.tfspellpack\:ring_twilight.name=暮色之戒
-item.tfspellpack\:ring_twilight.desc=在暮色森林中，法術強度增加10%%
+item.tfspellpack\:ring_twilight.name=暮光之戒
+item.tfspellpack\:ring_twilight.desc=在暮光森林中，法術強度增加10%%
 item.tfspellpack\:ring_hydra_kaboom.name=惡毒之眼戒指
 item.tfspellpack\:ring_hydra_kaboom.desc=九頭蛇爆炸火球的威力提升至TNT水平
 item.tfspellpack\:ring_aurora.name=極光之戒
@@ -14,7 +14,7 @@ item.tfspellpack\:ring_stealth_attack.name=隱夜之戒
 item.tfspellpack\:ring_stealth_attack.desc=擁有迷霧斗篷狀態時，在黑暗中伏擊敵人會提升50%%的傷害
 
 item.tfspellpack\:amulet_steeleaf.name=鋼葉護符
-item.tfspellpack\:amulet_steeleaf.desc=穿著全套巫師裝備並處於暮色森林中時，受到的傷害降低10%%
+item.tfspellpack\:amulet_steeleaf.desc=穿著全套巫師裝備並處於暮光森林中時，受到的傷害降低10%%
 item.tfspellpack\:amulet_carminite.name=砷鉛鐵護符
 item.tfspellpack\:amulet_carminite.desc=砷鉛鐵奇點可以阻擋彈射物
 item.tfspellpack\:amulet_life_charm.name=金心護符
@@ -83,8 +83,8 @@ spell.tfspellpack\:summon_slime_beetle=召喚黏液甲蟲
 spell.tfspellpack\:summon_twilight_wraith=召喚幽靈
 spell.tfspellpack\:suffocating_mist=窒息雲霧
 spell.tfspellpack\:transformation=轉換
-spell.tfspellpack\:twilight_catalyst=暮色觸媒
-spell.tfspellpack\:twilight_orb=暮色法球
+spell.tfspellpack\:twilight_catalyst=暮光觸媒
+spell.tfspellpack\:twilight_orb=暮光法球
 
 spell.tfspellpack\:acid_rain.desc=在你所指向的地方生成酸雨，持續傷害身處其中的生物。
 spell.tfspellpack\:annihilation.desc=「將立方護符拿在手中時會感到不可思議的沉重，它似乎是由某種超凡之物所製成，使其能夠蒸發物質本身。」
@@ -116,23 +116,23 @@ spell.tfspellpack\:summon_skeleton_druid.desc=召喚一個骷髏德魯伊為你�
 spell.tfspellpack\:summon_slime_beetle.desc=召喚一個黏液甲蟲為你戰鬥。黏液甲蟲如果沒有被殺死會持續存在30秒。
 spell.tfspellpack\:summon_twilight_wraith.desc=召喚一個幽靈為你戰鬥。幽靈如果沒有被殺死會持續存在30秒。
 spell.tfspellpack\:suffocating_mist.desc=黑暗森林不是怯懦者該來的地方。
-spell.tfspellpack\:transformation.desc=將目標生物轉化成暮色森林的對應生物，反之亦然。
-spell.tfspellpack\:twilight_catalyst.desc=將符合條件的水池啟動為暮色傳送門。
-spell.tfspellpack\:twilight_orb.desc=向你所指向的方向發射一個暮色法球。
+spell.tfspellpack\:transformation.desc=將目標生物轉化成暮光森林的對應生物，反之亦然。
+spell.tfspellpack\:twilight_catalyst.desc=將符合條件的水池啟動為暮光傳送門。
+spell.tfspellpack\:twilight_orb.desc=向你所指向的方向發射一個暮光法球。
 
 potion.tfspellpack\:mist_cloak=迷霧斗篷
 potion.tfspellpack\:ironwood_heart=鐵樹之心
 
-advancement.tfspellpack\:twilight_spell=暮色巫術學
-advancement.tfspellpack\:twilight_spell.desc=在暮色森林中找到暮色法術書或法術卷軸，重新發現其中被遺忘的魔法
-advancement.tfspellpack\:all_twilight_spells=暮色森林大法師
-advancement.tfspellpack\:all_twilight_spells.desc=施放所有暮色森林獨有的法術
+advancement.tfspellpack\:twilight_spell=暮光巫術學
+advancement.tfspellpack\:twilight_spell.desc=在暮光森林中找到暮光法術書或法術卷軸，重新發現其中被遺忘的魔法
+advancement.tfspellpack\:all_twilight_spells=暮光森林大法師
+advancement.tfspellpack\:all_twilight_spells.desc=施放所有暮光森林獨有的法術
 advancement.tfspellpack\:twilight_artefact=這從來都不適合他們
 advancement.tfspellpack\:twilight_artefact.desc=在德魯伊小屋地下室中擊敗德魯伊法師，取走其佩戴的遺物
-advancement.tfspellpack\:all_twilight_artefacts=暮色森林寶物
-advancement.tfspellpack\:all_twilight_artefacts.desc=集齊所有暮色森林特有的戒指、護身符和符咒
+advancement.tfspellpack\:all_twilight_artefacts=暮光森林寶物
+advancement.tfspellpack\:all_twilight_artefacts.desc=集齊所有暮光森林特有的戒指、護身符和符咒
 
 config.tfspellpack.loot_injection_locations=戰利品生成位置
-config.tfspellpack.loot_injection_locations.tooltip=將暮色森林法術包特有物品寫入戰利品列表(如 loot_tables/chests/tf_dungeon_additions.json)。
+config.tfspellpack.loot_injection_locations.tooltip=將暮光森林法術包特有物品寫入戰利品列表(如 loot_tables/chests/tf_dungeon_additions.json)。
 config.tfspellpack.druid_mage_spawn_chance=德魯伊法師的生成機率
-config.tfspellpack.druid_mage_spawn_chance.tooltip=德魯伊小屋地下室生成德魯伊法師的機會。設定為0的時候停用此機制（這樣做會使暮色森林特有的飾品在沒有自訂的方法下無法獲得）。
+config.tfspellpack.druid_mage_spawn_chance.tooltip=德魯伊小屋地下室生成德魯伊法師的機會。設定為0的時候停用此機制（這樣做會使暮光森林特有的飾品在沒有自訂的方法下無法獲得）。
