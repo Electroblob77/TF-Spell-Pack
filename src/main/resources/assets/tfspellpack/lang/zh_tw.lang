@@ -63,7 +63,7 @@ spell.tfspellpack\:druid_hex=德魯伊之觸
 spell.tfspellpack\:fire_jets=火焰噴射
 spell.tfspellpack\:fortification=巫妖壁壘
 spell.tfspellpack\:frost_breath=寒霜吐息
-spell.tfspellpack\:ghast_trap=地獄幽靈陷阱
+spell.tfspellpack\:ghast_trap=幽靈陷阱
 spell.tfspellpack\:hydra_bomb=九頭蛇爆炸火球
 spell.tfspellpack\:hydras_vigour=九頭蛇元氣
 spell.tfspellpack\:ice_bomb=冰霜炸彈
@@ -88,7 +88,7 @@ spell.tfspellpack\:twilight_orb=暮光法球
 
 spell.tfspellpack\:acid_rain.desc=在你所指向的地方生成酸雨，持續傷害身處其中的生物。
 spell.tfspellpack\:annihilation.desc=「將立方護符拿在手中時會感到不可思議的沉重，它似乎是由某種超凡之物所製成，使其能夠蒸發物質本身。」
-spell.tfspellpack\:carminite_singularity.desc=「砷鉛鐵，這種依正確比例混合地獄幽靈之淚、紅石和三化螟精華而製成的高反應性物質，擁有一些奇怪的性質。」
+spell.tfspellpack\:carminite_singularity.desc=「砷鉛鐵，這種依正確比例混合幽靈之淚、紅石和三化螟精華而製成的高反應性物質，擁有一些奇怪的性質。」
 spell.tfspellpack\:call_of_the_horn.desc=「Baaaaaaahhhhh」
 spell.tfspellpack\:chariot_of_ice.desc=§0冰川之上，耀塔之中，邪惡冰女衛其王宮。\n§7Atop a glacier, in a shimmering tower, An evil sorceress guards her throne.\n§0冰雪所祝，力量所護，徒受詛咒永恆孤獨。\n§7Blessed with frost, immense in power, Yet cursed to eternity alone.
 spell.tfspellpack\:cinder_cloud.desc=在你所指向的地方生成餘燼火雲，傷害並灼燒身處其中的生物。
