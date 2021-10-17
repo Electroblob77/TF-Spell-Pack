@@ -1,4 +1,3 @@
-# PARSE_ESCAPES
 tile.tfspellpack\:gilded_twilight_oak_wood.name=鑲金暮光橡樹原木
 tile.tfspellpack\:gilded_canopy_wood.name=鑲金蒼穹樹原木
 tile.tfspellpack\:gilded_mangrove_wood.name=鑲金紅樹原木
@@ -7,7 +6,6 @@ tile.tfspellpack\:gilded_timewood.name=鑲金時光樹原木
 tile.tfspellpack\:gilded_transwood.name=鑲金變換樹原木
 tile.tfspellpack\:gilded_minewood.name=鑲金礦物樹原木
 tile.tfspellpack\:gilded_sortingwood.name=鑲金分類樹原木
-
 tile.tfspellpack\:twilight_oak_bookshelf.name=暮光橡樹魔法書櫃
 tile.tfspellpack\:canopy_bookshelf.name=蒼穹樹魔法書櫃
 tile.tfspellpack\:mangrove_bookshelf.name=紅樹魔法書櫃
@@ -16,7 +14,6 @@ tile.tfspellpack\:timewood_bookshelf.name=時光樹魔法書櫃
 tile.tfspellpack\:transwood_bookshelf.name=變換樹魔法書櫃
 tile.tfspellpack\:minewood_bookshelf.name=礦物樹魔法書櫃
 tile.tfspellpack\:sortingwood_bookshelf.name=分類樹魔法書櫃
-
 tile.tfspellpack\:twilight_oak_lectern.name=暮光橡樹魔法講臺
 tile.tfspellpack\:canopy_lectern.name=蒼穹樹魔法講臺
 tile.tfspellpack\:mangrove_lectern.name=紅樹魔法講臺
@@ -25,10 +22,8 @@ tile.tfspellpack\:timewood_lectern.name=時光樹魔法講臺
 tile.tfspellpack\:transwood_lectern.name=變換樹魔法講臺
 tile.tfspellpack\:minewood_lectern.name=礦物樹魔法講臺
 tile.tfspellpack\:sortingwood_lectern.name=分類樹魔法講臺
-
 item.tfspellpack\:twilight_spell_book.name=暮光法術書
 item.tfspellpack\:twilight_scroll.name=暮光卷軸
-
 item.tfspellpack\:ring_twilight.name=暮光戒指
 item.tfspellpack\:ring_twilight.desc=使法術在暮光森林中增強10%%
 item.tfspellpack\:ring_hydra_kaboom.name=壞心眼之戒
@@ -39,14 +34,12 @@ item.tfspellpack\:ring_trollsteinn.name=巨魔石戒
 item.tfspellpack\:ring_trollsteinn.desc=使你製造的酸雨會讓目標中毒
 item.tfspellpack\:ring_stealth_attack.name=夜襲之戒
 item.tfspellpack\:ring_stealth_attack.desc=在迷霧斗篷的效果下潛行攻擊可增加50%%的傷害力
-
 item.tfspellpack\:amulet_steeleaf.name=鋼葉項鍊
 item.tfspellpack\:amulet_steeleaf.desc=在暮光森林穿著整套法師服時， 可減低10%%受到的傷害
 item.tfspellpack\:amulet_carminite.name=砷鉛鐵項鍊
 item.tfspellpack\:amulet_carminite.desc=使砷鉛鐵奇點能阻擋投射物
 item.tfspellpack\:amulet_life_charm.name=金心墜飾項鍊
 item.tfspellpack\:amulet_life_charm.desc=使生命法咒能恢復施法者全部的生命值並獲得額外的抗性效果
-
 item.tfspellpack\:charm_ice_exploder.name=惡毒冰珍珠
 item.tfspellpack\:charm_ice_exploder.desc=召喚冰精靈會召喚出危險的瘋狂冰精靈
 item.tfspellpack\:charm_goblin.name=紅帽礦工的小背包
@@ -55,7 +48,6 @@ item.tfspellpack\:charm_troll.name=冰凍巨魔漿果
 item.tfspellpack\:charm_troll.desc=召喚出的洞穴巨魔會對目標丟擲冰彈
 item.tfspellpack\:charm_accursed_tome.name=詛咒之書
 item.tfspellpack\:charm_accursed_tome.desc=讓死亡書頁附加隨機的負面效果
-
 entity.tfspellpack\:fire_beetle_minion.name=噴火甲蟲
 entity.tfspellpack\:stable_ice_core_minion.name=冰精靈
 entity.tfspellpack\:unstable_ice_core_minion.name=瘋狂冰精靈
@@ -67,18 +59,14 @@ entity.tfspellpack\:twilight_wraith_minion.name=暮光惡魂
 entity.tfspellpack\:snow_guardian_minion.name=冰雪守護者
 entity.tfspellpack\:carminite_ghastling_minion.name=迷你幽靈
 entity.tfspellpack\:cave_troll_minion.name=洞穴巨魔
-
 entity.tfspellpack\:druid_mage.name=德魯伊法師
-
 entity.tfspellpack\:acid_rain_cloud.name=酸雨雲
 entity.tfspellpack\:cinder_cloud.name=灰燼雲
 entity.tfspellpack\:fire_jet.name=火焰噴發口
 entity.tfspellpack\:rain_of_tears.name=淚雨
 entity.tfspellpack\:dark_mist_cloud.name=黑暗迷霧雲
-
 entity.tfspellpack\:fiery_tear.name=魔法
 entity.tfspellpack\:magic_hydra_mortar.name=魔法
-
 spell.tfspellpack\:acid_rain=酸雨
 spell.tfspellpack\:annihilation=毀滅射線
 spell.tfspellpack\:call_of_the_horn=號角之聲
@@ -112,7 +100,6 @@ spell.tfspellpack\:suffocating_mist=窒息迷霧
 spell.tfspellpack\:transformation=轉變
 spell.tfspellpack\:twilight_catalyst=暮光閃電
 spell.tfspellpack\:twilight_orb=暮光法球
-
 spell.tfspellpack\:acid_rain.desc=在你所指的地點製造一片毒雲，其降下的酸雨會持續傷害雨中的任何東西。
 spell.tfspellpack\:annihilation.desc=「這法寶拿在手上感覺不可思議的沉重，似乎是由異世界的材質所製成，使其能蒸發物質本身。」
 spell.tfspellpack\:carminite_singularity.desc=「將紅石、蛀蟲精華及幽靈之淚依正確的比例混合，可製成一種高反應性物質，叫作砷鉛鐵，具有一些相當奇妙的特性。」
@@ -146,10 +133,8 @@ spell.tfspellpack\:suffocating_mist.desc=黑暗森林不是膽小鬼該來的地
 spell.tfspellpack\:transformation.desc=將目標生物轉變成暮光森林對應的生物，反之亦然。
 spell.tfspellpack\:twilight_catalyst.desc=啟動暮光森林傳送門。
 spell.tfspellpack\:twilight_orb.desc=朝你所指的方向發射暮光法球。
-
 potion.tfspellpack\:mist_cloak=迷霧斗篷
 potion.tfspellpack\:ironwood_heart=鐵木之心
-
 advancement.tfspellpack\:twilight_spell=暮光法術
 advancement.tfspellpack\:twilight_spell.desc=在昏暗的暮光森林中找到暮光法術書或卷軸並重新發現這些被遺忘的魔法
 advancement.tfspellpack\:all_twilight_spells=暮光森林大法師
@@ -158,7 +143,6 @@ advancement.tfspellpack\:twilight_artefact=它們不配擁有這個
 advancement.tfspellpack\:twilight_artefact.desc=在德魯伊小屋的地下室打敗德魯伊法師並回收其佩帶的遺物
 advancement.tfspellpack\:all_twilight_artefacts=暮光森林飾品
 advancement.tfspellpack\:all_twilight_artefacts.desc=收集所有暮光森林特有的戒指、項鍊及符咒
-
 config.tfspellpack.loot_injection_locations=戰利品加入位置
 config.tfspellpack.loot_injection_locations.tooltip=列出要加入暮光森林法術包戰利品列表 (如loot_tables/chests/tf_dungeon_additions.json檔中所指定)的列表。
 config.tfspellpack.druid_mage_spawn_chance=德魯伊法師生成率
