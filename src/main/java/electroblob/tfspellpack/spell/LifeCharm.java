@@ -27,21 +27,30 @@ public class LifeCharm extends SpellBuff {
 		return item == TFSPItems.twilight_spell_book || item == TFSPItems.twilight_scroll;
 	}
 
-	@Override
-	protected boolean applyEffects(EntityLivingBase caster, SpellModifiers modifiers){
+    @Override
+    protected boolean applyEffects(EntityLivingBase caster, SpellModifiers modifiers){
 
-		float healthLevel = getProperty(HEALTH_LEVEL).floatValue();
+        float healthLevel = getProperty(HEALTH_LEVEL).floatValue();
 
-		if(caster instanceof EntityPlayer && ItemArtefact.isArtefactActive((EntityPlayer)caster, TFSPItems.amulet_life_charm)){
-			healthLevel = caster.getMaxHealth();
-			caster.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 600, 0));
-		}
+        // We calculate values on both sides so the return statement is accurate,
+        // but we only PERFORM the actions on the server later on.
+        boolean isAmuletActive = caster instanceof EntityPlayer && ItemArtefact.isArtefactActive((EntityPlayer)caster, TFSPItems.amulet_life_charm);
 
-		float healAmount = healthLevel - caster.getHealth();
+        if(isAmuletActive){
+            healthLevel = caster.getMaxHealth();
+        }
 
-		if(healAmount > 0) caster.heal(healAmount);
+        float healAmount = healthLevel - caster.getHealth();
 
-		return super.applyEffects(caster, modifiers) || healAmount > 0;
-	}
+        if(!caster.world.isRemote){
+            if(isAmuletActive){
+                caster.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 600, 0));
+            }
+
+            if(healAmount > 0) caster.heal(healAmount);
+        }
+
+        return super.applyEffects(caster, modifiers) || healAmount > 0;
+    }
 
 }

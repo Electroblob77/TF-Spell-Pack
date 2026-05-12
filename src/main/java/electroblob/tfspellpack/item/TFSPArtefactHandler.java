@@ -60,7 +60,7 @@ public class TFSPArtefactHandler {
 	@SubscribeEvent
 	public static void onLivingAttackEvent(LivingAttackEvent event){
 
-		if(event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer){
+		if(!event.getEntity().world.isRemote && event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer){
 
 			EntityPlayer player = (EntityPlayer)event.getSource().getTrueSource();
 
@@ -92,7 +92,7 @@ public class TFSPArtefactHandler {
 	@SubscribeEvent
 	public static void onLivingHurtEvent(LivingHurtEvent event){
 
-		if(event.getEntity() instanceof EntityPlayer){
+		if(!event.getEntity().world.isRemote && event.getEntity() instanceof EntityPlayer){
 
 			EntityPlayer player = (EntityPlayer)event.getEntity();
 
@@ -111,7 +111,7 @@ public class TFSPArtefactHandler {
 			}
 		}
 
-		if(event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer){
+		if(!event.getEntity().world.isRemote && event.getSource() != null && event.getSource().getTrueSource() instanceof EntityPlayer){
 
 			EntityPlayer player = (EntityPlayer)event.getSource().getTrueSource();
 

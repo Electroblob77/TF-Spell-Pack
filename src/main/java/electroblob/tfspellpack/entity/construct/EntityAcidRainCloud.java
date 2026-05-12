@@ -77,7 +77,7 @@ public class EntityAcidRainCloud extends EntityMagicConstruct {
 
 		for(EntityLivingBase target : targets){
 
-			target.extinguish(); // We might be burning them with toxic rain but at least it puts the fire out!
+            if(!this.world.isRemote) target.extinguish(); // We might be burning them with toxic rain but at least it puts the fire out!
 
 			if(this.isValidTarget(target)){
 
@@ -90,9 +90,9 @@ public class EntityAcidRainCloud extends EntityMagicConstruct {
 								TFSPItems.ring_trollsteinn)){
 							target.addPotionEffect(new PotionEffect(MobEffects.POISON, 200, 1));
 						}
-					}
 
-					target.playSound(TFSPSounds.ENTITY_ACID_RAIN_ATTACK, 1.2f, 1);
+                        target.playSound(TFSPSounds.ENTITY_ACID_RAIN_ATTACK, 1.2f, 1);
+					}
 				}
 			}
 		}
