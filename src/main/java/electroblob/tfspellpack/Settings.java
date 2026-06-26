@@ -1,8 +1,13 @@
 package electroblob.tfspellpack;
 
 import net.minecraftforge.common.config.Config;
+import net.minecraftforge.common.config.ConfigManager;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Config(modid = TFSpellPack.MODID) // No fancy configs here so we can use the annotation, hurrah!
+@Mod.EventBusSubscriber
 public class Settings {
 
 	@Config.Comment("List of loot tables to inject twilight forest spell pack loot (as specified in loot_tables/chests/tf_dungeon_additions.json) into.")
@@ -25,5 +30,12 @@ public class Settings {
 	@Config.RangeDouble(min = 0, max = 1)
 	@Config.SlidingOption
 	public static double druidMageSpawnChance = 0.5;
+
+	@SubscribeEvent
+	public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
+		if (event.getModID().equals(TFSpellPack.MODID)) {
+			ConfigManager.sync(TFSpellPack.MODID, Config.Type.INSTANCE);
+		}
+	}
 
 }
