@@ -6,6 +6,7 @@ import electroblob.wizardry.item.SpellActions;
 import electroblob.wizardry.spell.SpellRay;
 import electroblob.wizardry.util.SpellModifiers;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -45,7 +46,10 @@ public class TwilightCatalyst extends SpellRay {
 
 	@Override
 	protected boolean onBlockHit(World world, BlockPos pos, EnumFacing side, Vec3d hit, @Nullable EntityLivingBase caster, Vec3d origin, int ticksInUse, SpellModifiers modifiers){
-		if(world.getBlockState(pos).getBlock() != Blocks.WATER) pos = pos.offset(side); // hitLiquids is playing up so this should fix it
+		IBlockState state = world.getBlockState(pos);
+		// hitLiquids is playing up so this should fix it
+		// One-way portal blocks can also be converted into a portal directly, so they must not be offset either
+		if(state.getBlock() != Blocks.WATER && !TFBlocks.twilight_portal.canFormPortal(state)) pos = pos.offset(side);
 		EntityItem dummyItem = new EntityItem(world);
 		return TFBlocks.twilight_portal.tryToCreatePortal(world, pos, dummyItem, caster instanceof EntityPlayer ? (EntityPlayer)caster : null);
 	}
