@@ -37,7 +37,7 @@ apply plugin: 'maven-publish'
 apply plugin: org.ajoberstar.grgit.gradle.GrgitPlugin
 apply plugin: 'wtf.gofancy.fancygradle'
 
-version = "1.1.1"
+version = "1.1.2"
 group = "electroblob.tfspellpack" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "TFSpellPack"
 
