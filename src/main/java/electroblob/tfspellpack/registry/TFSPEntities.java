@@ -3,6 +3,7 @@ package electroblob.tfspellpack.registry;
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.entity.construct.*;
 import electroblob.tfspellpack.entity.living.*;
+import electroblob.tfspellpack.entity.projectile.EntityDruidHex;
 import electroblob.tfspellpack.entity.projectile.EntityMagicHydraMortar;
 import electroblob.tfspellpack.entity.projectile.EntityTear;
 import net.minecraft.entity.Entity;
@@ -71,6 +72,7 @@ public final class TFSPEntities {
 		// Projectiles
 		registry.register(createEntry(EntityMagicHydraMortar.class, 	"magic_hydra_mortar", 		TrackingType.PROJECTILE).build());
 		registry.register(createEntry(EntityTear.class, 				"fiery_tear", 				TrackingType.PROJECTILE).build());
+		registry.register(createEntry(EntityDruidHex.class, 			"druid_hex", 					TrackingType.PROJECTILE).build());
 
 		// Constructs
 		registry.register(createEntry(EntityTearRain.class, 			"rain_of_tears", 				TrackingType.CONSTRUCT).build());

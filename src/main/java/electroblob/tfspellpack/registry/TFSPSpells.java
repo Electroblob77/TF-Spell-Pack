@@ -2,6 +2,7 @@ package electroblob.tfspellpack.registry;
 
 import electroblob.tfspellpack.TFSpellPack;
 import electroblob.tfspellpack.entity.living.*;
+import electroblob.tfspellpack.entity.projectile.EntityDruidHex;
 import electroblob.tfspellpack.spell.*;
 import electroblob.tfspellpack.util.TFSPUtils;
 import electroblob.wizardry.spell.Spell;
@@ -15,7 +16,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 import twilightforest.entity.EntityTFMoonwormShot;
-import twilightforest.entity.EntityTFNatureBolt;
 import twilightforest.entity.EntityTFTomeBolt;
 import twilightforest.entity.EntityTFTwilightWandBolt;
 import twilightforest.entity.boss.EntityTFIceBomb;
@@ -83,7 +83,7 @@ public final class TFSPSpells {
 		registry.register(new FrostBreath());
 		registry.register(new SpellMinion<>(TFSpellPack.MODID, "summon_skeleton_druid", EntitySkeletonDruidMinion::new).npcSelector(TFSPUtils.IN_TF_DIMENSION).items(tfSpellItems));
 		registry.register(new SummonRedcapGoblin());
-		registry.register(new SpellThrowable<>(TFSpellPack.MODID, "druid_hex", EntityTFNatureBolt::new).npcSelector(TFSPUtils.IN_TF_DIMENSION).items(tfSpellItems));
+		registry.register(new SpellThrowable<>(TFSpellPack.MODID, "druid_hex", EntityDruidHex::new).npcSelector(TFSPUtils.IN_TF_DIMENSION).items(tfSpellItems));
 		registry.register(new SpellThrowable<>(TFSpellPack.MODID, "moonworm", EntityTFMoonwormShot::new).npcSelector(TFSPUtils.IN_TF_DIMENSION).items(tfSpellItems));
 		registry.register(new SpellBuff(TFSpellPack.MODID, "mist_cloak", 0.17f, 0.2f, 0.2f, () -> TFSPPotions.mist_cloak).npcSelector(TFSPUtils.IN_TF_DIMENSION).items(tfSpellItems));
 		registry.register(new Transformation());
