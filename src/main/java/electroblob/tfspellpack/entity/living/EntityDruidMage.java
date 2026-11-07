@@ -214,8 +214,11 @@ public class EntityDruidMage extends EntityEvilWizard {
 
 					try {
 						// Druid spawners are only found in druid huts
-						if(getEntityId.invoke(((TileEntityMobSpawner)tileEntity).getSpawnerBaseLogic())
-								.equals(EntityList.getKey(EntityTFSkeletonDruid.class))){
+						// The spawner's entity id can be null (e.g. a spawner with no entity set), so compare null-safely
+						ResourceLocation spawnerEntityId = (ResourceLocation)getEntityId.invoke(
+								((TileEntityMobSpawner)tileEntity).getSpawnerBaseLogic());
+
+						if(spawnerEntityId != null && spawnerEntityId.equals(EntityList.getKey(EntityTFSkeletonDruid.class))){
 
 							lookForBasementAndSpawnDruidMage(event.getWorld(), pos);
 							return; // Some huts have 2 spawners, but we only want to do this once per hut
